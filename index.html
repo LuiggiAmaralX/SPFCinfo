@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleport.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="perfil.html">
+                    <img src="imgs/sao-paulo-logo.png" alt="Logo da empresa">
+                </a>
+            </div>
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="perfil3.html">Inicio</a></li>
+                    <li><a href="#">Times</a></li>
+                    <li><a href="https://www.estadiodomorumbi.com.br/">Estadio</a></li>
+                    <li><a href="#">História</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="">
+                    <button>Contato</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>SÃO PAULO FUTEBOL CLUBE</h1><br>
+                        <h3>PRINCIPAIS TÍTULOS</h3>
+                        <p>
+                            <ul>
+                                <li>■  MUNDIAL DE CLUBES (3X) - 1992 - 1993 - 2005 </li>
+                                <li>■  LIBERTADORES DA AMÉRICA (3X) - 1992 - 1993 - 2005 </li>
+                                <li>■  COPA SUL-AMERICANA (1X) - 2012</li>
+                                <li>■  CAMPEONATO BRASILEIRO (6X) - 1977 - 1986 - 1991 - 2006 - 2007 - 2008</li>
+                                <li>■  COPA DO BRASIL (1X) - 2023</li><br>
+                                <li>■  CAMPEONATO PAULISTA (22X)</li>
+                                <li>■  SUPERCOPA DA LIBERTADORES (1X) - 1993</li>
+                                <li>■  RECOPA SUL-AMERICANA (2X) - 1993 - 1994</li>
+                                <li>■  COPA CONMEBOL (1X) - 1994 </li>
+                                <li>■  COPA MASTER DA CONMEBOL (1X) - 1996 </li>
+                            </ul>
+                        </p>
+
+                        <div class="btn-contato">
+                            <a href="http://www.saopaulofc.net/spfc">
+                                <button>MAIS INFORMAÇÕES</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="img-topo-site" id="imagem">
+                        <a href="#" onclick="playMusica()">
+                            <img src="imgs/sao-paulo-logo.png" alt="SPFC">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- SCRIPT PARA TOCAR O HINO -->
+    <!-- --------------------------------------------------------------- -->
+
+    <audio id="HinoSPFC" style="display: none">
+      <source src="imgs/hino-sao-paulo-fc.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+      function playMusica() {
+        var audio = document.getElementById("HinoSPFC");
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+          audio.currentTime = 0;
+        }
+      }
+    </script>
+</body>
+</html>
